@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- scroll view to show on both landscape and protrait -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Scroll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2e8ff">
+
+    <!-- constraint view to show all views -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- the banner showing the application name-->
+        <TextView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="172dp"
+            android:fontFamily="@font/henny_penny"
+            android:text="@string/autorize"
+            android:textAlignment="center"
+            android:textColor="@color/maintext"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Field to enter the email as a username -->
+        <EditText
+            android:id="@+id/enteremail"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:autofillHints="emailAddress"
+            android:ems="10"
+            android:hint="@string/enter_your_email_address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#607D8B"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+        <!-- field to enter the password -->
+        <EditText
+            android:id="@+id/password_toggle"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autofillHints="password"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="#607D8B"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enteremail" />
+
+        <!-- the login button if you have a user account already -->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/login"
+            android:textColor="#F5F5F5"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password_toggle" />
+
+        <!-- a register link to create a new user's account -->
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="160dp"
+            android:text="@string/not_a_user_register"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login" />
+
+        <!-- the application logo -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="204dp"
+            android:layout_height="171dp"
+            android:contentDescription="@string/lock"
+            app:layout_constraintBottom_toTopOf="@+id/banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

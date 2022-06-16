@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Sedrakb1_Authorize</string>
+    <string name="authorize">Authorize</string>
+    <string name="slogan">You are in a good hand!</string>
+    <string name="lock">lock</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+
+    <string name="autorize">Autorize</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="enter_first_name">Enter you First Name</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="lock2">lock2</string>
+    <string name="enter_your_family_name">Enter your Family Name</string>
+    <string name="enter_your_date_of_birth">Enter your date of birth</string>
+    <string name="not_a_user_register">Not a User? Register</string>
+    <string name="already_a_user_login">Already a User? Login</string>
+    <string name="log_out">Log out</string>
+    <string name="your_information">Your Information</string>
+
+</resources>
